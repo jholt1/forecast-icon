@@ -1,13 +1,17 @@
 {
   "name": "forecast-icon",
   "private": false,
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Forecast icons",
+  "main": "dist/collection/index.js",
+  "types": "dist/collection/index.d.ts",
+  "collection": "dist/collection/collection-manifest.json",
   "files": [
     "dist/"
   ],
+  "browser": "dist/forecast.js",
   "scripts": {
-    "build": "stencil build --prerender",
+    "build": "stencil build",
     "dev": "sd concurrent \"stencil build --dev --watch\" \"stencil-dev-server\" ",
     "serve": "stencil-dev-server",
     "start": "npm run dev",
@@ -16,8 +20,7 @@
     "prepublishOnly": "npm run build"
   },
   "dependencies": {
-    "@stencil/core": "next",
-    "@stencil/router": "latest"
+    "@stencil/core": "next"
   },
   "devDependencies": {
     "@stencil/dev-server": "latest",
@@ -28,7 +31,7 @@
     "type": "git",
     "url": "git+https://github.com/jholt1/forecast-icon.git"
   },
-  "author": "Ionic Team",
+  "author": "jholt1",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/jholt1/forecast-icon"

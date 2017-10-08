@@ -1,4 +1,6 @@
 exports.config = {
+  namespace: 'forecast',
+  generateDistribution: true,
   bundles: [
     { components: ['forecast-icon'] }
   ]
